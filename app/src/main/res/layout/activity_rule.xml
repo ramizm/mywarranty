@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#323C5E"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_margin="13dp"
+            android:layout_width="12dp"
+            android:layout_height="24dp"
+            android:id="@+id/btn_rule_back"
+            android:background="@drawable/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="이용약관"
+            android:textSize="9.5pt"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="0.06" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="7pt"
+        android:text="이용약관
+마이워런티는 고객님의 개인정보를 중요시 합니다.\n
+마이워런티는 고객님의 개인정보를 중요시하며, “정보통신망 이용촉진 및 정보보호”에 관한 법률을 준수하고 있습니다. 회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다. 본 방침은 2015년 4월 28일부터 시행됩니다."
+        android:textColor="#000000"
+        android:layout_gravity="center_vertical"
+        android:gravity="center" />
+
+    <ExpandableListView
+        android:id="@+id/list_rule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#B8B7B7"
+        android:dividerHeight="1.5dp"
+        android:choiceMode="singleChoice">
+
+    </ExpandableListView>
+</LinearLayout>

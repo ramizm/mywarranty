@@ -1,0 +1,251 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe6e6e6">
+
+
+    <RelativeLayout
+        android:id="@+id/Relayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/Relayout2"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffffff">
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:id="@+id/imageView"
+                    android:background="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView2"
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_gravity="left|bottom"
+                    android:layout_below="@+id/imageView"
+                    android:layout_toLeftOf="@+id/textView2"
+                    android:layout_toStartOf="@+id/textView2" />
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:layout_below="@id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="로이드"
+                    android:id="@+id/gift_name"
+                    android:textColor="#ff989898"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="LOVE 시리즈 18호"
+                    android:id="@+id/textView2"
+                    android:layout_below="@+id/gift_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="15dp" />
+
+                <ImageButton
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/imageButton1"
+                    android:background="#ff000000" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="구매일"
+                    android:id="@+id/date"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_below="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="2015.05.27"
+                    android:id="@+id/date_number"
+                    />
+
+                <ImageButton
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/imageButton2"
+                    android:background="#ff000000" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="A/S 유효기간"
+                    android:id="@+id/as_date"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="구매 후 1년"
+                    android:id="@+id/as_date_num" />
+
+                <ImageButton
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/as_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/imageButton3"
+                    android:background="#ff000000" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="구매 매장"
+                    android:id="@+id/location"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_below="@id/imageButton3"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="강남"
+                    android:id="@+id/location2" />
+
+                <ImageButton
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/imageButton4"
+                    android:background="#ff000000"  />
+
+                <TextView
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="문의전화"
+                    android:id="@+id/text"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/text"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="로이드"
+                    android:id="@+id/changed_place"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/changed_place"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="000-000-000"
+                    android:id="@+id/changed_number" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="From. 카디보증서"
+                android:id="@+id/warranty"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/Relayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="삭제"
+            android:id="@+id/delete"
+            android:background="#ff5031bc" />
+
+        <RelativeLayout
+            android:id="@+id/Relayout_text"
+            android:layout_below="@+id/delete"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="얼ㅇ렁렁렁렁렁렁렁러길게길게
+                             쭊쭊쭊쭊쭊 내려가라아아아
+                                     아하하하핳하하하하"
+                android:id="@+id/textView" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,557 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.convener.myapplication.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/horizontal_margin"
+        android:paddingRight="@dimen/horizontal_margin"
+        android:paddingTop="@dimen/vertical_margin"
+        android:paddingBottom="@dimen/vertical_margin">
+        <!-- Sign Up -->
+        <TextView
+            android:id="@+id/txt_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sign_up_message"/>
+
+        <!-- Blank -->
+        <TextView
+            android:id="@+id/txt_blank1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/blank_height"
+            android:layout_below="@+id/txt_sign_up"/>
+
+        <!-- ID Info -->
+        <TextView
+            android:id="@+id/txt_sign_up_id_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_blank1"
+            android:layout_alignLeft="@+id/img_sign_up_line1"
+            android:layout_alignStart="@+id/img_sign_up_line1"
+            android:text="@string/sign_up_id_info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_blank1"
+            android:layout_alignRight="@+id/img_sign_up_line1"
+            android:layout_alignEnd="@+id/img_sign_up_line1"
+            android:text="@string/sign_up_essential_point"
+            android:id="@+id/textView" />
+
+        <!-- Line -->
+        <ImageView
+            android:id="@+id/img_sign_up_line1"
+            android:layout_width="@dimen/sign_up_line_width"
+            android:layout_height="@dimen/line_height"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_sign_up_id_info"
+            android:src="@drawable/line" />
+
+        <!-- ID -->
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_object_height"
+            android:layout_below="@+id/img_sign_up_line1"
+            android:layout_alignLeft="@+id/img_sign_up_line1"
+            android:layout_marginLeft="@dimen/margin_between_objects"
+            android:layout_marginRight="@dimen/margin_between_objects"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sign_up_id"
+                android:layout_width="@dimen/sign_up_txt_width"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_id"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_id"
+                android:layout_width="@dimen/sign_up_edit_1_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/sign_up_hint"/>
+
+            <Button
+                android:id="@+id/btn_sign_up_id_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/img_sign_up_line1"
+                android:layout_marginLeft="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:text="@string/sign_up_check"
+                android:textColor="@color/white"
+                android:background="@color/main_theme"/>
+        </LinearLayout>
+
+        <!-- Password -->
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_pw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_object_height"
+            android:layout_below="@+id/linear_layout_sign_up_id"
+            android:layout_alignLeft="@id/linear_layout_sign_up_id"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sign_up_pw"
+                android:layout_width="@dimen/sign_up_txt_width"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_pw"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_pw"
+                android:layout_width="@dimen/sign_up_edit_1_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+        <!-- Re-Password -->
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_re_pw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_object_height"
+            android:layout_below="@id/linear_layout_sign_up_pw"
+            android:layout_alignLeft="@id/linear_layout_sign_up_pw"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sign_up_re_pw"
+                android:layout_width="@dimen/sign_up_txt_width"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_re_pw"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_re_pw"
+                android:layout_width="@dimen/sign_up_edit_1_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+        <!-- Blank -->
+        <TextView
+            android:id="@+id/txt_blank2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/blank_height"
+            android:layout_below="@id/linear_layout_sign_up_re_pw"/>
+
+        <!-- Personal Info -->
+        <TextView
+            android:id="@+id/txt_sign_up_personal_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_blank2"
+            android:layout_alignLeft="@+id/txt_sign_up_id_info"
+            android:text="@string/sign_up_personal_info"/>
+
+        <!-- Line -->
+        <ImageView
+            android:id="@+id/img_sign_up_line2"
+            android:layout_width="@dimen/sign_up_line_width"
+            android:layout_height="@dimen/line_height"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_sign_up_personal_info"
+            android:src="@drawable/line"/>
+
+        <!-- Name -->
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_object_height"
+            android:layout_below="@id/img_sign_up_line2"
+            android:layout_alignLeft="@id/img_sign_up_line2"
+            android:layout_marginLeft="@dimen/margin_between_objects"
+            android:layout_marginRight="@dimen/margin_between_objects"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sign_up_name"
+                android:layout_width="@dimen/sign_up_txt_width"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_name"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_name"
+                android:layout_width="@dimen/sign_up_edit_1_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/sign_up_hint"/>
+        </LinearLayout>
+
+        <!-- Gender -->
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_gender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_object_height"
+            android:layout_below="@+id/linear_layout_sign_up_name"
+            android:layout_alignLeft="@id/linear_layout_sign_up_name"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sign_up_gender"
+                android:layout_width="@dimen/sign_up_txt_width"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_gender"/>
+
+            <RadioGroup
+                android:id="@+id/radio_sign_up_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sign_up_object_height"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_sign_up_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_between_objects"
+                    android:text="@string/sign_up_gender_m"/>
+
+                <RadioButton
+                    android:id="@+id/radio_sign_up_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_gender_f"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Date of Birthday -->
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_dob"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_object_height"
+            android:layout_below="@id/linear_layout_sign_up_gender"
+            android:layout_alignLeft="@+id/linear_layout_sign_up_gender"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sign_up_dob"
+                android:layout_width="@dimen/sign_up_txt_width"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_dob"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_year"
+                android:layout_width="@dimen/sign_up_edit_3_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="date"/>
+
+            <TextView
+                android:id="@+id/txt_sign_up_slash1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_between_objects"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="/"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_month"
+                android:layout_width="@dimen/sign_up_edit_3_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="date"/>
+
+            <TextView
+                android:id="@+id/txt_sign_up_slash2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_between_objects"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="/"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_day"
+                android:layout_width="@dimen/sign_up_edit_3_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="date"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_dob_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_layout_sign_up_dob"
+            android:layout_marginLeft="@dimen/sign_up_radio_dob_margin">
+
+            <RadioGroup
+                android:id="@+id/radio_sign_up_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_sign_up_solar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_between_objects"
+                    android:text="@string/sign_up_solar"/>
+
+                <RadioButton
+                    android:id="@+id/radio_sign_up_lunar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_lunar"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Mobile -->
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_object_height"
+            android:layout_below="@+id/linear_layout_sign_up_dob_radio"
+            android:layout_alignLeft="@id/linear_layout_sign_up_dob"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sign_up_mobile"
+                android:layout_width="@dimen/sign_up_txt_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_mobile"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_mobile1"
+                android:layout_width="@dimen/sign_up_edit_3_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="phone"/>
+
+            <TextView
+                android:id="@+id/txt_sign_up_hyphen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_between_objects"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="-"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_mobile2"
+                android:layout_width="@dimen/sign_up_edit_3_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="phone"/>
+
+            <TextView
+                android:id="@+id/txt_sign_up_hyphen2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_between_objects"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="-"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_mobile3"
+                android:layout_width="@dimen/sign_up_edit_3_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="phone"/>
+        </LinearLayout>
+
+        <!-- Mobile Radio Button -->
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_mobile_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout_sign_up_mobile"
+            android:layout_alignLeft="@+id/linear_layout_sign_up_dob_radio"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sign_up_receive_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_receive_sms"/>
+
+            <RadioGroup
+                android:id="@+id/radio_sign_up_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_sign_up_sms_receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_between_objects"
+                    android:text="@string/sign_up_receive"/>
+
+                <RadioButton
+                    android:id="@+id/radio_sign_up_sms_reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_reject_receive"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- E-mail -->
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_object_height"
+            android:layout_below="@id/linear_layout_sign_up_mobile_radio"
+            android:layout_alignLeft="@id/linear_layout_sign_up_mobile"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sign_up_email"
+                android:layout_width="@dimen/sign_up_txt_width"
+                android:layout_height="@dimen/sign_up_object_height"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_email"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_email1"
+                android:layout_width="@dimen/sign_up_edit_2_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/txt_sign_up_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_between_objects"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/sign_up_at"/>
+
+            <EditText
+                android:id="@+id/edit_sign_up_email2"
+                android:layout_width="@dimen/sign_up_edit_2_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+
+            <Spinner
+                android:id="@+id/spin_sign_up_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Email Radio Button -->
+        <LinearLayout
+            android:id="@+id/linear_layout_sign_up_email_radio"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_object_height"
+            android:layout_below="@+id/linear_layout_sign_up_email"
+            android:layout_alignLeft="@id/linear_layout_sign_up_mobile_radio"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sign_up_receive_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_receive_email"/>
+
+            <RadioGroup
+                android:id="@+id/radio_sign_up_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_sign_up_email_receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_between_objects"
+                    android:text="@string/sign_up_receive"/>
+
+                <RadioButton
+                    android:id="@+id/radio_sign_up_email_reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_reject_receive"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Line -->
+        <ImageView
+            android:id="@+id/img_sign_up_line3"
+            android:layout_width="@dimen/sign_up_line_width"
+            android:layout_height="@dimen/line_height"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linear_layout_sign_up_email_radio"
+            android:src="@drawable/line"/>
+
+        <!-- Join -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sign_up_object_height"
+            android:layout_below="@+id/img_sign_up_line3"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:background="@color/main_theme"/>
+
+            <Button
+                android:id="@+id/btn_sign_up_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:background="@color/main_theme"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

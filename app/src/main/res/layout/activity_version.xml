@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingRight="@dimen/horizontal_margin"
+    android:paddingTop="@dimen/vertical_margin"
+    android:paddingBottom="@dimen/vertical_margin"
+    tools:context="com.example.ramizm_2.mywarranty.VersionActivity">
+
+
+    <ImageView
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:id="@+id/icon01"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:padding="50dp"
+        android:textAlignment="center"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재 버전 V1.1"
+        android:id="@+id/present_ver"
+        android:layout_marginRight="50dp"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/icon01"
+        android:layout_alignStart="@+id/new_ver" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최신 버전 V2.1"
+        android:id="@+id/new_ver"
+        android:layout_alignBottom="@+id/icon01"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재 최신 버전 입니다."
+        android:id="@+id/btn_ver"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/icon01"
+        android:layout_alignEnd="@+id/new_ver"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+</RelativeLayout>
+

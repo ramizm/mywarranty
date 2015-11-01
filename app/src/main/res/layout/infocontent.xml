@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_infocontent_name"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="New Text"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_infocontent_date"
+        android:paddingTop="20dp"
+        android:paddingLeft="15dp"
+        android:layout_toEndOf="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="13dp"
+        android:textColor="#ffa6a6a6" />
+
+    <TextView
+        android:id="@+id/txt_infocontent_time"
+        android:paddingTop="20dp"
+        android:paddingLeft="5dp"
+        android:layout_toEndOf="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="13dp"
+        android:textColor="#ffc8c8c8" />
+
+</LinearLayout>

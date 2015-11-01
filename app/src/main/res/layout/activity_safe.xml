@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.ramizm_2.mywarranty.SafeActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+            android:layout_marginTop="@dimen/safe_between_component_vertical_margin"
+            android:text="@string/safe_password" />
+
+        <TextView
+            android:id="@+id/txt_safe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+            android:text="@string/safe_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/img_safe_jewelry_1"
+                android:layout_width="@dimen/safe_jewelry_width"
+                android:layout_height="@dimen/safe_jewelry_height"
+                android:layout_marginRight="@dimen/safe_between_component_horizontal_margin" />
+
+            <ImageView
+                android:id="@+id/img_safe_jewelry_2"
+                android:layout_width="@dimen/safe_jewelry_width"
+                android:layout_height="@dimen/safe_jewelry_height"
+                android:layout_marginRight="@dimen/safe_between_component_horizontal_margin" />
+
+            <ImageView
+                android:id="@+id/img_safe_jewelry_3"
+                android:layout_width="@dimen/safe_jewelry_width"
+                android:layout_height="@dimen/safe_jewelry_height"
+                android:layout_marginRight="@dimen/safe_between_component_horizontal_margin" />
+
+            <ImageView
+                android:id="@+id/img_safe_jewelry_4"
+                android:layout_width="@dimen/safe_jewelry_width"
+                android:layout_height="@dimen/safe_jewelry_height" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/safe_between_component_vertical_margin"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_safe_one"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginRight="@dimen/safe_between_component_horizontal_margin"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageButton
+                android:id="@+id/btn_safe_two"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginLeft="@dimen/safe_between_component_horizontal_margin"
+                android:layout_marginRight="@dimen/safe_between_component_horizontal_margin"
+                android:layout_toRightOf="@+id/btn_safe_one"/>
+
+            <ImageButton
+                android:id="@+id/btn_safe_three"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginLeft="@dimen/safe_between_component_horizontal_margin"
+                android:layout_toRightOf="@+id/btn_safe_two"/>
+
+            <ImageButton
+                android:id="@+id/btn_safe_four"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginTop="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginRight="@dimen/safe_between_component_horizontal_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btn_safe_one"/>
+
+            <ImageButton
+                android:id="@+id/btn_safe_five"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginLeft="@dimen/safe_between_component_horizontal_margin"
+                android:layout_marginRight="@dimen/safe_between_component_horizontal_margin"
+                android:layout_marginTop="@dimen/safe_between_component_vertical_margin"
+                android:layout_below="@+id/btn_safe_two"
+                android:layout_toRightOf="@+id/btn_safe_four"/>
+
+            <ImageButton
+                android:id="@+id/btn_safe_six"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginLeft="@dimen/safe_between_component_horizontal_margin"
+                android:layout_marginTop="@dimen/safe_between_component_vertical_margin"
+                android:layout_below="@+id/btn_safe_three"
+                android:layout_toRightOf="@+id/btn_safe_five"/>
+
+            <ImageButton
+                android:id="@+id/btn_safe_seven"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginTop="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginRight="@dimen/safe_between_component_horizontal_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btn_safe_four"/>
+
+            <ImageButton
+                android:id="@+id/btn_safe_eight"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginLeft="@dimen/safe_between_component_horizontal_margin"
+                android:layout_marginRight="@dimen/safe_between_component_horizontal_margin"
+                android:layout_marginTop="@dimen/safe_between_component_vertical_margin"
+                android:layout_below="@+id/btn_safe_five"
+                android:layout_toRightOf="@+id/btn_safe_seven"/>
+
+            <ImageButton
+                android:id="@+id/btn_safe_nine"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginLeft="@dimen/safe_between_component_horizontal_margin"
+                android:layout_marginTop="@dimen/safe_between_component_vertical_margin"
+                android:layout_below="@+id/btn_safe_six"
+                android:layout_toRightOf="@+id/btn_safe_eight"/>
+
+            <ImageButton
+                android:id="@+id/btn_safe_zero"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginRight="@dimen/safe_between_component_horizontal_margin"
+                android:layout_marginTop="@dimen/safe_between_component_vertical_margin"
+                android:layout_alignLeft="@+id/btn_safe_eight"
+                android:layout_below="@+id/btn_safe_eight"/>
+
+            <ImageButton
+                android:id="@+id/btn_safe_back"
+                android:layout_width="@dimen/safe_width"
+                android:layout_height="@dimen/safe_height"
+                android:layout_marginBottom="@dimen/safe_between_component_vertical_margin"
+                android:layout_marginLeft="@dimen/safe_between_component_horizontal_margin"
+                android:layout_marginTop="@dimen/safe_between_component_vertical_margin"
+                android:layout_below="@+id/btn_safe_nine"
+                android:layout_toRightOf="@+id/btn_safe_zero"/>
+        </RelativeLayout>
+        <!--<GridView-->
+        <!--android:id="@+id/grid_safe"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:numColumns="3"/>-->
+    </LinearLayout>
+</FrameLayout>

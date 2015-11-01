@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_guide"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="New Button"
+        android:textSize="30dp"
+        android:textColor="#ff18103b"
+        android:background="#ffdbdbdb" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#ffff6456"
+        android:textSize="13dp" />
+
+</LinearLayout>

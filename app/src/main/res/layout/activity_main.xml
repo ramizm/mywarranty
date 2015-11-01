@@ -1,0 +1,166 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_linear" />
+
+    <!-- The main content view -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Title -->
+        <LinearLayout
+            android:id="@+id/linear_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/main_theme"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_left_drawer"
+                android:layout_width="@dimen/title_button_width"
+                android:layout_height="@dimen/title_button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_between_objects"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:background="@drawable/ic_drawer2"
+                android:onClick="onClickLeftDrawer" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:layout_width="@dimen/title_button_width"
+                android:layout_height="@dimen/title_button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_between_objects"
+                android:layout_marginRight="@dimen/margin_between_objects"
+                android:background="@drawable/search_w2"
+                android:onClick="onClickSearch" />
+
+        </LinearLayout>
+
+        <!-- Tab Button -->
+        <LinearLayout
+            android:id="@+id/layout_linear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            android:layout_below="@+id/linear_title"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/frame_tab_my_warranty"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tab_height"
+                android:layout_weight="1"
+                android:background="@color/main_theme"
+                android:onClick="onClickMyWarranty">
+
+                <ImageButton
+                    android:id="@+id/btn_my_warranty"
+                    android:layout_width="@dimen/tab_icon_width"
+                    android:layout_height="@dimen/tab_icon_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mywarranty_w2"
+                    android:onClick="onClickMyWarranty" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_tab_as"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tab_height"
+                android:layout_weight="1"
+                android:onClick="onClickAS">
+
+                <ImageButton
+                    android:id="@+id/btn_AS"
+                    android:layout_width="@dimen/tab_icon_width"
+                    android:layout_height="@dimen/tab_icon_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/as_b2"
+                    android:onClick="onClickAS" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_tab_present"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tab_height"
+                android:layout_weight="1"
+                android:onClick="onClickPresent">
+
+                <ImageButton
+                    android:id="@+id/btn_present"
+                    android:layout_width="@dimen/tab_icon_width"
+                    android:layout_height="@dimen/tab_icon_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/present_b2"
+                    android:onClick="onClickPresent" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_tab_store"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tab_height"
+                android:layout_weight="1"
+                android:onClick="onClickMap">
+
+                <ImageButton
+                    android:id="@+id/btn_map"
+                    android:layout_width="@dimen/tab_icon_width"
+                    android:layout_height="@dimen/tab_icon_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/store_b2"
+                    android:onClick="onClickMap" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_tab_news"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tab_height"
+                android:layout_weight="1"
+                android:onClick="onClickPromotion">
+
+                <ImageButton
+                    android:id="@+id/btn_news"
+                    android:layout_width="@dimen/tab_icon_width"
+                    android:layout_height="@dimen/tab_icon_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/news_b2"
+                    android:onClick="onClickPromotion" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Fragment -->
+        <LinearLayout
+            android:id="@+id/layout_linear_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_linear"
+            android:orientation="vertical" />
+
+    </RelativeLayout>
+
+    <!-- The navigation drawer -->
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffff"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+</android.support.v4.widget.DrawerLayout>

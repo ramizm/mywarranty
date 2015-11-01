@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/main_theme">
+
+        <ImageButton
+            android:id="@+id/btn_navigation_drawer_back"
+            android:layout_width="@dimen/navigation_drawer_button_back_width"
+            android:layout_height="@dimen/navigation_drawer_button_back_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:background="@drawable/back2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_drawer_profile_height"
+        android:background="@color/main_theme"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_profile_photo"
+            android:layout_width="@dimen/navigation_drawer_profile_photo"
+            android:layout_height="@dimen/navigation_drawer_profile_photo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/navigation_drawer_vertical_margin"
+            android:background="@drawable/profile1" />
+
+        <TextView
+            android:id="@+id/txt_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/navigation_drawer_vertical_margin"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/navigation_drawer_vertical_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/navigation_drawer_diamond"
+                android:layout_height="@dimen/navigation_drawer_diamond"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/jewelry2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_between_objects"
+                android:text="@string/navigation_drawer_my_warranty"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_between_objects"
+                android:text="@string/navigation_drawer_my_warranty_count"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_profile_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_drawer_list_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:text="@string/navigation_drawer_notice" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/linear_profile_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_drawer_list_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:text="@string/navigation_drawer_setting" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/linear_profile_rule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_drawer_list_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:text="@string/navigation_drawer_rule" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/linear_profile_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_drawer_list_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:text="@string/navigation_drawer_logout" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line" />
+</LinearLayout>

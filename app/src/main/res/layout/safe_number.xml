@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_safe_number"
+        android:layout_width="@dimen/safe_width"
+        android:layout_height="@dimen/safe_height"
+        android:layout_marginLeft="@dimen/safe_horizontal_margin"
+        android:layout_marginRight="@dimen/safe_horizontal_margin"
+        android:layout_marginTop="@dimen/safe_vertical_margin"
+        android:layout_marginBottom="@dimen/safe_vertical_margin"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
